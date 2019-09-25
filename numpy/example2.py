@@ -14,7 +14,7 @@ print(a % b) #деление по модулю (остаток)
 print(a // b) #целочисленное деление
 print(a ** b) #возведение в степень
 
-#оперции с числами
+#операции с числами
 print(a + 1) 
 print(a * 2)
 print(a < 40)
@@ -24,7 +24,7 @@ print(np.sqrt(a))
 print(np.cos(a))
 print(np.log(a))
 
-#
+#сумма и максимум
 print(np.sum(a))
 print(np.max(a))
 
