@@ -1,3 +1,3 @@
-example1.py - примеры на python
+example*.py - примеры на python
 
-example1.ipynb - для самостоятельной работы
+example*.ipynb - для самостоятельной работы
