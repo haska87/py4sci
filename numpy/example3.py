@@ -1,9 +1,9 @@
 import numpy as np
 
-#Случаное заполнение
-print(np.random.sample())
-print(np.random.sample(5))
-print(np.random.sample((3, 3)))
+#Случайное заполнение
+print("число:", np.random.sample())
+print("вектор:", np.random.sample(5))
+print("матрица:\n", np.random.random((3, 3)))
 
 a = np.random.randint(-2, 2, 10) #[-2, 2), 10 штук
 print("вектор из целых числел:", a)
@@ -28,11 +28,7 @@ b = np.random.choice(a, 10, p=[0.5, 0.25, 0.25, 0, 0, 0, 0, 0, 0, 0])
 print("вектор:", a)
 print("выборка:", b)
 
-#Генератор
-print(np.random.random(10))
-print(np.random.random(10))
-
-#не случайная случайность
+#Не случайная случайность
 np.random.seed(100)
 print(np.random.random(10))
 np.random.seed(100)
