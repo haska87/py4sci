@@ -1,4 +1,4 @@
-documentation https://matplotlib.org/
+documentation - https://matplotlib.org/
 
 *.py - примеры на python
 
