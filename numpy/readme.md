@@ -1,4 +1,4 @@
-documentation - https://numpy.org/
+documentation - https://numpy.org/doc/
 
 *.py - примеры на python
 
