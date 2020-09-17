@@ -26,3 +26,5 @@ print(np.arange(0, 21, 5)) #интервал с шагом
 print(np.arange(1, 2, 0.1))
 
 print(np.linspace(1, 9, 10)) #интервал с количеством
+
+#sdjfjhsdjfs
