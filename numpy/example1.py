@@ -1,30 +1,38 @@
 # Импорт билбиотеки
-import numpy as np 
+import numpy as np
 
-# Создание массива
-a = np.array([1, 2, 3]) #одномерный
+# cоздание одномерного массива
+a = np.array([1, 2, 3])
 print(a)
-print(type(a)) #тип
+# вывод типа
+print(type(a))
 
-b = np.array([[1, 2, 3], [1.5, 2.5, 3.5]]) #двумерный
+# cоздание двумерного массива
+b = np.array([[1, 2, 3], [1.5, 2.5, 3.5]])
 print(b)
 
-b = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.complex) #типизированный
+# создание типизированного массива
+b = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.complex)
 print(b)
 
-# Заполнение
-z = np.zeros((3, 3)) #нулями
+# заполнение нулями
+z = np.zeros((3, 3))
 print(z)
-o = np.ones((2, 2, 2)) #единицами
+
+# заполнение единицами
+o = np.ones((2, 2, 2))
 print(o)
-e = np.eye(4) #единичная матрица
+
+# единичная матрица
+e = np.eye(4)
 print(e)
 
-print(np.empty((3, 3))) #пустой
+# пустой массив
+print(np.empty((3, 3)))
 
-print(np.arange(0, 21, 5)) #интервал с шагом
+# интервал с шагом
+print(np.arange(0, 21, 5))
 print(np.arange(1, 2, 0.1))
 
-print(np.linspace(1, 9, 10)) #интервал с количеством
-
-#sdjfjhsdjfs
+# интервал с количеством
+print(np.linspace(1, 9, 10))

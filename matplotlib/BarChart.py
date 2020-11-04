@@ -1,5 +1,5 @@
 import pandas as pd
-from matplotlib import pyplot as plt 
+from matplotlib import pyplot as plt
 from collections import Counter
 # import csv
 
@@ -30,7 +30,7 @@ languages = []
 popularuty = []
 
 for item in lang_counter.most_common(20):
-    languages.append(item[0]) 
+    languages.append(item[0])
     popularuty.append(item[1])
 
 languages.reverse()

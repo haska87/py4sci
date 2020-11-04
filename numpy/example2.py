@@ -10,25 +10,28 @@ print(a - b)
 print(a * b)
 print(a / b)
 
-print(a % b) #деление по модулю (остаток)
-print(a // b) #целочисленное деление
-print(a ** b) #возведение в степень
+# деление по модулю (остаток)
+print(a % b)
+# целочисленное деление
+print(a // b)
+# возведение в степень
+print(a ** b)
 
-#операции с числами
-print(a + 1) 
+# операции с числами
+print(a + 1)
 print(a * 2)
 print(a < 40)
 
-#математические операции
+# математические операции
 print(np.sqrt(a))
 print(np.cos(a))
 print(np.log(a))
 
-#сумма и максимум
+# сумма и максимум
 print(np.sum(a))
 print(np.max(a))
 
-#индексы и срезы
+# индексы и срезы
 a = np.arange(10) ** 2
 print(a)
 print(a[1])
@@ -36,21 +39,25 @@ print(a[2:5])
 
 a[2:5] = -1
 print(a)
-print(a[::-1]) #обратный вывод
+# обратный вывод
+print(a[::-1])
 
-a = np.array([[  0, 1, 2, 3],
-            [10, 11, 12, 13],
-            [20, 21, 22, 23],
-            [30, 31, 32, 33],
-            [40, 41, 42, 43]])
+a = np.array([[0, 1, 2, 3],
+              [10, 11, 12, 13],
+              [20, 21, 22, 23],
+              [30, 31, 32, 33],
+              [40, 41, 42, 43]])
 
-print(a[2,2])
-print(a[(2,2)])
+print(a[2, 2])
+print(a[(2, 2)])
 print(a[2][2])
 
-print(a[:,0]) #первая строка
-print(a[-1]) #последняя строка
-print(a[3:]) #с 3 строки
+# первая строка
+print(a[:, 0])
+# последняя строка
+print(a[-1])
+# с 3 строки
+print(a[3:])
 
 for row in a:
     print(row)
@@ -58,22 +65,28 @@ for row in a:
 for el in a.flat:
     print(el)
 
-#Манипуляции с формой
+# манипуляции с формой
 print(a)
-print(a.shape) #форма
-print(a.ravel()) #сделать плоским
-print(a.transpose()) #транспонирование
+# вывод формы
+print(a.shape)
+# сделать плоским
+print(a.ravel())
+# транспонирование
+print(a.transpose())
 
-a.shape = (4, 5) #изменить форму
-print(a)
-
-print(a.reshape(5, 4)) #возращает измененную форму
-print(a)
-
-a.resize((5, 4)) #изменяет форму
+# изменить форму
+a.shape = (4, 5)
 print(a)
 
-#Объединение и разбиение
+# возращает измененную форму
+print(a.reshape(5, 4))
+print(a)
+
+# изменяет форму
+a.resize((5, 4))
+print(a)
+
+# объединение и разбиение
 a = np.array([[1, 2], [3, 4]])
 b = np.array([[5, 6], [7, 8]])
 print(np.vstack((a, b)))
@@ -86,7 +99,7 @@ a = np.arange(12).reshape((2, 6))
 print(a)
 print(np.hsplit(a, 3))
 
-#Копии
+# копии
 a = np.arange(10)
 b = a
 print(b is a)
@@ -94,19 +107,21 @@ print(b is a)
 b.shape = (2, 5)
 print(a.shape)
 
-#поверхностная копия (представление)
+# поверхностная копия (представление)
 c = a.view()
 print(c)
 print(c is a)
 print(c.base is a)
 
+# форма а не поменяется
 c.shape = (5, 2)
-print(a.shape) #форма а не поменяется
+print(a.shape)
+# данные а изменятся
 c[0, 0] = 99
-print(a) #данные а изменятся
-#cрез массива это представление
+# cрез массива это представление
+print(a)
 
-#глубокая копия
+# глубокая копия
 d = a.copy()
 print(d is a)
 print(d.base is a)

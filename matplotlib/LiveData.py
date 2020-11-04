@@ -1,7 +1,6 @@
-from matplotlib import pyplot as plt 
+from matplotlib import pyplot as plt
 import pandas as pd
 from matplotlib.animation import FuncAnimation
-import random
 from itertools import count
 
 plt.style.use('seaborn')
@@ -10,6 +9,7 @@ x = []
 y = []
 
 index = count()
+
 
 def animate(i):
     # x.append(next(index))
